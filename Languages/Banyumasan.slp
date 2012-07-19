@@ -1,0 +1,308 @@
+;; ===================================== ;;
+;; Shollu Language Pack for Shollu v3.06 ;;
+;; LangName      : Banyumasan            ;;
+;; Created by    : Inyong MLC		     ;;
+;; Last Modified : 8:40 09/12/2006       ;;  
+;; ===================================== ;;
+
+;; Do not directly edit this file, but always save as or created backup copy
+Shollu3
+;; ========== General ========== ;;
+
+; Jenenge wektu
+Subuh
+Terbit
+Duhur
+Asar
+Magrib
+Isya'
+
+; Jenenge Dina
+Minggu
+Senen
+Selasa
+Rebo
+Kemis
+Jum'at
+Saptu
+
+; Jenenge Wulan
+Januari
+Februari
+Maret
+April
+Mei
+Juni
+Juli
+Agustus
+September
+Oktober
+November
+Desember
+
+; Jenenge wulan ning Hijriyah
+Muharram
+Safar
+Rabiul Awal
+Rabiul Akhir
+Jumadil Awal
+Jumadil Akhir
+Rajab
+Syaban
+Ramadhan
+Syawal
+Dzulqaidah
+Dzulhijjah
+
+; Prayer times parameter
+Grs Lintang
+Grs Bujur
+Duwure
+Zona wektu
+Organisasi
+Fiqih
+
+;; ----- Button ------ ;;
+
+iya
+Delah
+Ora
+
+;; ========== Main Page Window ========== ;;
+
+;; ----- Main Page ( Caption / Title )----- ;
+
+Nggo ngelingna wektu sembayang
+Tampilan latar ngarep
+Latar ngarep
+Nggo ngatur program
+wektu sembayang
+Pesen utama 
+Gawe jadwal
+Pesen tambahan
+Tentang program
+Wingi
+Dina kiye
+Ngesuk
+Enggone : 
+
+;; ----- Program Pengaturan Window ------ ;;
+
+Nggo ngatur tampilan program
+Milih skin / warna
+Milih bahasa
+Suara adan
+Dimonikna
+Jeda
+Mandeg
+Wujudeng wektu
+Otomatis mlaku dewek pas windows dimulai
+Delah
+
+;; ----- Prayer Times Pengaturan ----- ;;
+
+Nggo ngatur wektu sembayang
+Nggone
+Milih enggon
+wektu Asar
+Nambah Dhuhur
+Nambah Maghrib
+Universitas Ilmu Keislaman Karachi
+Federasi Islam Amerika Utara
+Rabitah Alam Islami
+Universitas Ummul Qura
+Dinas Geologi Mesir
+Tentukna dhewek derajate
+Mbukak data
+Nganggo data
+Ditutup
+Enggone
+Grs Lintang
+Grs Bujur
+Delah
+
+;; ----- Message Info ----- ;;
+
+Nggo ngatur Pesen utama
+Sedurunge wektu sembayang teka
+Katokna pesen sedurunge 
+Pas teka wektu sembayang
+Katokna pesen 
+Kabeh layar dicilikna 
+Monikna suara adan nek ora media liyane
+Langsung mateni Komputer
+Hibernate Komputer
+Sewise wektu sembayang
+Katokna pesen sewise
+Pateni Komputer sewise
+Hibernate sewise
+Pesen nggo dina jum'at
+Katokna pesen informasi wektu sembayang saben 
+Menit
+Delah
+
+
+;; ----- Creating Prayer times schedule ----- ;;
+
+Nggo nggawe jadwal sembayang
+Nggawe jadwal sembayang
+Milih tanggal mulaine
+Ngganti tanggal
+Wujud wektu
+Wujude nggo ndelah 
+HTML
+Tab Separated value (tsv)
+Comma Separated Value (csv)
+Milih warna utama
+Delah file
+
+;; ----- Task Scheduler ------ ;;
+
+Jeneng
+Bentuk
+Frekuensi
+Jam
+Dina
+Tanggal
+Wulan
+Pesen
+Mbuka File
+Tambah
+Busek
+Ora sida
+Delah
+Tutup
+
+;; ----- About Window ----- ;;
+Tentang Program
+
+;; ================ Others Message ============== ;;
+
+;; ----- Main info ------- ;;
+
+Program shollu lagi mlaku
+wektu sembayang %s wis teka
+%d menit maning wektu sembayang %s
+Siap-siap sembayang jum'at
+%d menit wis lewat sing sembayang %s
+Apa kowe wis yakin arep mateni program Shollu?
+Apa kowe wis yakin arep hibernate Komputer kiye ? Klik OK nek arep hibernate 
+Komputere kowe ora bisa nggo hibernate 
+Apa kowe wis yakin arep mateni( Shutdown ) komputer ? Klik OK nek arep Shutdown
+Help File ora ditemukna
+
+;; ----- PopUp Menu ------;;
+
+Buka Program Shollu
+Dumpetna Shollu
+Nggo ngatur Program
+Nggo ngatur wektu sembayang
+Nggo ngatur pesen utama
+Nggo gawe jadwal sembayang
+Pesen tambahan
+Nggo ngganti wulan Masehi – Hijriyah
+Buka bantuan
+Pateni PC
+Hibernate PC
+Pateni Shollu
+adan
+Pateni adan
+Mandegna adan
+Jalakna adan
+Tentang Shollu
+
+;; ----- MessageBox ------- ;;
+
+Nilai sing ora valid Nganggo garis Lintang / garis Bujur
+Nilai sing ora valid Nganggo Zona wektu / ketinggian
+Nilai sing ora valid Nganggo Tbahan wektu Dhuhur / Maghrib
+Nilai sing ora valid Nganggo Gd / Gn
+
+; Select cities
+Jumlah data lokasi
+Buka file shollu place name
+
+; Dialog
+Informasi
+Eling
+Pertanyaan
+Error
+
+; Prayer times table , result HTML, tsv, csv wujud
+
+Jadwal wektu sembayang nganggo wilayah
+Dawn Angle (Gd)
+Night Angle (Gn)
+Zona wektu
+Perhitungan wektu asar berdasarkan
+Konvensi perhitungan sembayang shubuh dan isya berdasarkan
+
+; Task scheduler
+
+Ora bisa ndelah file task.dat. Pastikna file task.dat ora lagi dinggo
+Nilai sing ora valid nganggo Pesen
+Nilai sing ora valid nganggo Jeneng
+Pesen ora kena ana simbol "|" nekora ";" -ne.
+File ora ditemukna. Pastikna file kuwe ana nek milih tipe command
+Apa kowe yakin arep mbusek pesen sing dipilih ?
+
+; Pengaturan program
+Buka file suara nggo adan
+File nggo adan ora ditemukna. Pastikna file ana apa ora.
+; Others
+Tanggal
+Masehi
+Hijriyah
+Wulan
+
+; Task Type
+[None]
+Informasi
+Error
+Nggo ngelingna
+Nggo takon
+Command
+Mateni PC
+Diumpetna
+Tulisan mlaku
+
+; Task Frequently
+[None]
+Nggal dina
+Nggal Minggu
+Nggal Wulan
+Mung sepisan
+Pas mulai Program
+
+; New
+Konvensi nggo sembayang Shubuh karo Isya
+
+; Add From v3.02
+Warna
+wektu sembayang %s nesih %s (jam:menit:detik)
+Nesih
+Arah Kiblat
+
+; From v3.05
+pesen Dialog
+Efek
+Duwur
+Tengah
+Ngisor 
+Cepet nemen
+Cepet
+Normal
+Londog
+Londog nemen
+Multimedia
+
+; From v3.06
+Nambah Shubuh
+Nambah Asar
+Nambah Isya'
+Mbulatna maring ngisor
+Mbulatna maring duwur
+Mbulatna Biasa
+Tampilan (window) kirang paling duwur terus
+Nggo nyesuekna Hijriyah
+Sisane Wektu

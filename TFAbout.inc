@@ -1,0 +1,1 @@
+TFAbout = class(TObj)

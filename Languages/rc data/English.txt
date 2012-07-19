@@ -1,0 +1,227 @@
+Shollu v3.09
+Fajr
+Shurook
+Zuhr
+Asr
+Maghrib
+Isha
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Muharram
+Safar
+Rabiul Awal
+Rabiul Akhir
+Jumadil Awal
+Jumadil Akhir
+Rajab
+Syaban
+Ramadhan
+Syawal
+Dzulqaidah
+Dzulhijjah
+Lattitude
+Longitude
+Altitude
+Time zone
+Organization
+Fiqh
+OK
+Save
+Cancel
+Prayer times reminder
+Main Page Window
+Main page
+Program setting
+Prayer times
+Message info
+schedule maker
+Task scheduler
+About
+Yesterday
+Today
+Tomorrow
+Place name
+Program Setting Window
+Select skin color
+Select Language
+Adzan Sound
+Play
+Pause
+Stop
+Time Format
+Auto tart with windows
+Save
+Prayer times setting
+Place name
+Select city
+Asr times
+Add zuhr
+Add Maghrib
+Univ. of Islamic Sciences Karachi
+Islamic Society of North America (ISNA)
+World Islamic League
+Univ. Ummul Qura’
+Egyptian General Org. Of Surveying
+Customize degree
+Load data
+Use selected data
+Close
+Place names
+Latitude
+Longitude
+Save
+Main message info setting
+Before prayer times arrived
+Show message before
+When prayer times arrived
+Show message notification
+Minimize all windows
+Play adzan or sound
+Shutdown my PC
+Hibernate my PC
+After prayer times
+Show message after
+Shutdown my PC after
+Hibernate after
+Message for Friday prayer
+Show information prayer times every
+Minutes
+Save
+Creating prayer times table
+Create prayer times table
+Select start time / date
+Select end of date
+Time format
+Saved in Format
+HTML
+Tab Separated value (tsv)
+Comma Separated Value (csv)
+Select main back color
+Save file
+Name
+Type
+Frequently
+Time
+DayOfWeek
+Date
+Month
+Message
+Open File
+Add
+Delete
+Cancel
+Save
+Close
+About Window
+Shollu instance has already running
+Now is the time to pray %s
+%d minutes again time to sholah %s
+Prepare your self for friday prayer
+%d minutes has left from %s time
+Are you sure you want to close shollu?
+Are you sure you want to hibernate this Computer ? Click OK to hibernate
+Your computer doesn't support hibernate
+Are you sure you want to Shutdown this Computer ? Click OK to shutdown
+Help File not found
+Open Shollu
+Hide Shollu
+Program setting
+Prayer times setting
+Main message setting
+Schedule maker
+Task scheduler
+Masehi – Hijriyah Converter
+Open help
+Shutdown PC
+Hibernate PC
+Close Shollu
+Adzan
+Stop Adzan
+Pause Adzan
+Play Adzan
+About Shollu
+Invalid value for Latitude or Longitude
+Invalid value for TimeZone or Altitude
+Invalid Added value for Dhuhur or Maghrib
+Invalid Added value for Gd or Gn
+Total Place names
+Open Shollu place name
+Information
+Warning
+Question
+Error
+Prayer times table for
+Dawn Angle (Gd)
+Night Angle (Dn)
+Time Zone
+Asr Calculation Based on
+Conventions for calculation Fajr and Ishaa Based on
+Cannot Save to task.dat. Make sure file task.dat is not currently in use
+Invalid value for message
+Invalid value for Name
+Message Cannot contain simbol "|" or ";"
+File Not Found. Make sure you type correct file for message when you select "Command" type
+Are you sure you want to delete the selected message ?
+Open Sound file for adzan
+Adzan File not found. Make sure you select correct location of the file.
+Date
+Masehi
+Hijri
+Month
+[None]
+Information
+Error
+Warning
+Question
+Command
+Shutdown PC
+Hibernate
+Moving Text
+[None]
+Daily
+Weekly
+Monthly
+OnlyOnce
+OnStartProgram
+Conventions for Fajr and Ishaa
+Color
+Time to pray %s still %s (hours:minutes:second)
+Remaining
+Qibla Direction
+Dialog Message
+Effect
+Top
+Center
+Bottom
+Very Fast
+Fast
+Normal
+Slow
+Very Slow
+Multimedia
+Add Fajr
+Add Asr
+Add Isha
+Round off downwards
+Round off upwards
+Round off normal
+Window Always on Top
+Hijriyah Correction
+Remaining Time

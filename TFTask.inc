@@ -1,0 +1,1 @@
+TFTask = class(TObj)

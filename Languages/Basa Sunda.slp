@@ -1,0 +1,312 @@
+;; ================================================================ ;;
+;; Shollu Language Pack for Shollu v3.06                            ;;
+;; LangName      : Sunda                                            ;;
+;; Translated by : Tata Danamihardja" <tata_pjl@telkom.net>         ;;
+;; Last Modified : 8:40 09/12/2006                                  ;;  
+;; =================================================================;;
+ 
+
+;; Do not directly edit this file, but always save as or created backup copy
+Shollu3
+;; ========== General ========== ;;
+
+; Prayer times names
+Subuh
+Meletek Pajar
+Lohor
+Asar
+Magrib
+Isa
+
+; DayOf Week
+Ahad
+Senen
+Salasa
+Rebo
+Kemis
+Juma'ah
+Saptu
+
+; Month Name
+Januari
+Pebruari
+Maret
+April
+Mei
+Juni
+Juli
+Agustus
+September
+Oktober
+Nopember
+Desember
+
+; Month Name in Hijriyah
+Muharam
+Sapar
+Mulud
+Silih Mukud
+Jumadil Awal
+Jumadil Ahir
+Rajab
+Rewah
+Puasa
+Sawal
+Hapit
+Rayagung
+
+; Prayer times parameter
+Grs Lintang
+Grs Bujur
+Luhurna tempat
+Zona Waktu
+Organisasi
+Fiqih
+
+;; ----- Button ------ ;;
+
+OK
+Simpen
+Teu Jadi
+
+;; ========== Main Page Window ========== ;;
+
+;; ----- Main Page ( Caption / Title )----- ;
+
+Ciciren waktu sholat
+Jenglengan kaca utama
+Kaca utama
+Ngatur program
+Waktu solat
+Pesen utama
+Nyieun jadwal
+Pesen tambahan
+Ngeunaan program
+Kamari
+Poe ieu
+Isukan
+Ngaran tempat
+
+;; ----- Program Setting Window ------ ;;
+
+Jenglengan setting program
+Milih skin / warna
+Milih basa
+Sora adan
+Paenkeun
+Reureuh
+Eureun
+Pormat waktu
+Otomatis jalan unggal windows dihurungkeun
+Simpen
+
+;; ----- Prayer Times Setting ----- ;;
+
+Ngatur waktu sholat
+Ngaran tempat
+Milih area
+Waktu Asar
+Tambah Lohor
+Tambah Magrib
+Unipersitas Elmu Kaislaman Karachi
+Pederasi Islam Amerika Kaler
+Rabitah Alam Islami
+Unipersitas Ummul Qura
+Dinas Geologi Mesir
+Derajat ngitung sorangan  
+Buka data
+Pake data
+Tutup
+Ngaran tempat
+Grs Lintang
+Grs Bujur
+Simpen
+
+;; ----- Message Info ----- ;;
+
+Setting Pesen utama
+Memeh cunduk waktu sholat
+Pintonkeun pesen samemehna
+Dina cundukna waktu solat
+Pintonkeun pesen
+Minimize kabeh windows
+Hurungkeun sora adzan atawa media sejenna
+Langsung Shutdown Komputer
+Hibernate Komputer
+Sanggeus waktu sholat
+Pintonkeun pesen saenggeusna
+Shutdown Komputer 
+Hibernate 
+Pesen jang poe Juma'ah
+Pintonkeun pesen inpormasi waktu solat unggal
+Menit
+Simpen
+
+
+;; ----- Creating Prayer times schedule ----- ;;
+
+Paragi Nyieun Jadwal Sholat
+Nyieun jadwal sholat
+Ti tanggal
+Nepi ka tanggal
+Pormat waktu
+Simpen dina pormat
+HTML
+Tab Separated value (tsv)
+Comma Separated Value (csv)
+Milih warna utama
+Simpen file
+
+;; ----- Task Scheduler ------ ;;
+
+Ngaran
+Tipe
+Prekwensi
+Jam
+Poe
+Tanggal
+Bulan
+Pesen
+Buka File
+Tambah
+Pupus
+Bolay
+Simpen
+Tutup
+
+;; ----- About Window ----- ;;
+Ngeunaan Program
+
+;; ================ Others Message ============== ;;
+
+;; ----- Main info ------- ;;
+
+Program shollu geus hurung
+Waktu sholat %s geus cunduk
+%d menit deui waktu solat %s
+Geura tatan-tatan pikeun jumaahan
+%d menit geus liwat tina waktu sholat %s
+Yakin program shollu rek ditutup?
+Yakin komputer ieu rek di-Hibernate ? Mun yakin, pek Klik OK
+Ah komputer ente teu ngadukung pungsi hibernate
+Yakin rek mareuman ( Shutdown ) komputer ? Mun yakin, pek Klik OK
+File Help teu katimu
+
+;; ----- PopUp Menu ------;;
+
+Buka Program Shollu
+Sumputkeun Shollu
+Setting Program
+Setting waktu sholat
+Setting pesen utama
+Paragi Nyieun jadwal sholat
+Pesen tambahan
+Konversi Masehi – Hijriyah
+Buka pitulung
+Shutdown PC
+Hibernate PC
+Tutup Shollu
+Adzan
+Pareuman Adzan
+Reureuhkeun Adzan
+Paenkeun Adzan
+Ngeunaan Shollu
+
+;; ----- MessageBox ------- ;;
+
+Niley nu teu valid pikeun garis Lintang / garis Bujur
+Niley nu teu valid pikeun Zona waktu / ketinggian
+Niley nu teu valid pikeun tambahan waktu Lohor / Maghrib
+Niley nu teu valid pikeun Gd / Gn
+
+; Select cities
+Jumlah ngaran tempat
+Buka file shollu place name
+
+; Dialog
+Inpormasi
+Peringatan
+Pitulung
+Error
+
+; Prayer times table , result HTML, tsv, csv format
+
+Jadwal Waktu Sholat Wilayah
+Dawn Angle (Gd)
+Night Angle (Gn)
+Zona waktu
+Petangan waktu asar dumasar kana
+Konvensi petangan sholat shubuh jeung isya dumasar kana
+
+; Task scheduler
+
+Teu bisa nyimpen file task.dat. Paling bisa oge mun file task.dat keur teu dipake
+Niley teu valid pikeun pesen
+Niley teu valid pikeun Nama
+Pesen teu meunang ngandung simbol "|" atau ";"
+File teu kapanggih. File kudu aya lamun milih tipe command
+Yakin rek mupus pesen nu dipilih ?
+
+; Setting program
+Muka file sora keur adzan
+File adzan teu kapanggih. Filena kudu aya heula.
+
+; Others
+Tanggal
+Masehi
+Hijriyah
+Bulan
+
+; Task Type
+[None]
+Inpormasi
+Error
+Ciciren
+Pananya
+Parentah
+Shutdown PC
+Hibernate
+Tulisan nyoloyong
+
+; Task Frequently
+[None]
+Poean
+Mingguan
+Bulanan
+Ngan Sakali
+Mitembeyan Program
+
+; New
+Konvensi keur Sholat Shubuh jeung Isya
+
+; Begin from v3.02
+Warna
+Waktu sholat %s masih %s (jam:menit:detik)
+Masih
+Arah Kiblat
+
+; From v3.05
+; Masih Bahasa Indonesia
+Pesen Dialog
+Efek
+Luhur
+Tengah
+Handap
+Gancang Kacida
+Gancang
+Biasa
+Laun
+Laun Kacida
+Multimedia
+
+; From v3.06
+; Masih Bahasa Indonesia
+Tambah Subuh
+Tambah Asar
+Tambah Isa
+Dibuleudkeun Ka Handap
+Dibuleudkeun Ka Luhur
+Dibuleudkeun Normal
+Jenglengan (window) panghareupna
+Nyaluyukeun Hijriyah
+Waktu Tersisa

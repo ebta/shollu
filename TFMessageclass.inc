@@ -1,0 +1,1 @@
+TFMessage = class; PFMessage = TFMessage;

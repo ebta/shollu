@@ -1,0 +1,1 @@
+TFDialog = class; PFDialog = TFDialog;

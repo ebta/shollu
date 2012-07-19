@@ -1,0 +1,1 @@
+TFArea = class(TObj)
