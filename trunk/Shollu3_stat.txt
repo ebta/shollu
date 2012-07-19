@@ -1,0 +1,19 @@
+Source Statistics Result Report
+
+--------------------------
+;
+Filename: Shollu3.dpr
+
+At Dir.: D:\Documents\Ebta\Project\Software\Shollu3\src
+Bytes: 972
+Code Bytes: 343
+Comment Bytes: 342
+Lines: 38
+Effective Lines: 31
+Blank Lines: 7
+Code Lines: 24
+Comment Lines: 21
+Comment Blocks: 26
+
+--------------------------
+;

@@ -1,0 +1,1 @@
+TFMainPage = class(TObj)

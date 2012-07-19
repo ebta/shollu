@@ -1,0 +1,309 @@
+;; ===================================== ;;
+;; Shollu Language Pack for Shollu v3.06 ;;
+;; LangName      : English               ;;
+;; Created by    : Ebta Setiawan         ;;
+;; Last Modified : 8:40 09/12/2006     ;;  
+;; ===================================== ;;
+
+;; Do not directly edit this file, but always save as or created backup copy
+Shollu3
+;; ========== General ========== ;;
+
+; Prayer tims names
+Fajr
+Shurook
+Zuhr
+Asr
+Maghrib
+Isha
+
+; DayOf Week
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+
+; Month Name
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+
+; Month Name in Hijriyah
+Muharram
+Safar
+Rabiul Awal
+Rabiul Akhir
+Jumadil Awal
+Jumadil Akhir
+Rajab
+Syaban
+Ramadhan
+Syawal
+Dzulqaidah
+Dzulhijjah
+
+; Prayer times parameter
+Lattitude
+Longitude
+Altitude
+Time zone
+Organization
+Fiqh
+
+;; ----- Button ------ ;;
+
+OK
+Save
+Cancel
+
+;; ========== Main Page Window ========== ;;
+
+;; ----- Main Page ( Caption / Title )----- ;
+
+Prayer times reminder
+Main Page Window
+Main page
+Program setting
+Prayer times
+Message info
+Schedule maker
+Task scheduler
+About
+Yesterday
+Today
+Tomorrow
+Place name
+
+;; ----- Program Setting Window ------ ;;
+
+Program Setting Window
+Select skin color
+Select Language
+Adzan Sound
+Play
+Pause
+Stop
+Time Format
+Auto Start with windows
+Save
+
+;; ----- Prayer Times Setting ----- ;;
+
+Prayer times setting
+Place name
+Select city
+Asr times
+Add Zuhr
+Add Maghrib
+Univ. of Islamic Sciences Karachi
+Islamic Society of North America (ISNA)
+World Islamic League
+Univ. Ummul Qura’
+Egyptian General Org. Of Surveying
+Customize degree
+Load data
+Use selected data
+Close
+Place names
+Latitude
+Longitude
+Save
+
+;; ----- Message Info ----- ;;
+
+Main message info setting
+Before prayer times arrived
+Show message before
+When prayer times arrived
+Show message notification
+Minimize all windows
+Play adzan or sound
+Shutdown my PC
+Hibernate my PC
+After prayer times
+Show message after
+Shutdown my PC after
+Hibernate after
+Message for Friday prayer
+Show information prayer times every
+Minutes
+Save
+
+
+;; ----- Creating Prayer times schedule ----- ;;
+
+Creating prayer times table
+Create prayer times table
+Select start time / date
+Select end of date
+Time format
+Saved in Format
+HTML
+Tab Separated value (tsv)
+Comma Separated Value (csv)
+Select main back color
+Save file
+
+;; ----- Task Scheduler ------ ;;
+
+Name
+Type
+Frequently
+Time
+DayOfWeek
+Date
+Month
+Message
+Open File
+Add
+Delete
+Cancel
+Save
+Close
+
+;; ----- About Window ----- ;;
+About Window
+
+;; ================ Others Message ============== ;;
+
+;; ----- Main info ------- ;;
+
+Shollu instance has already running
+Now is the time to pray %s
+%d minutes to %s time
+Prepare your self for friday prayer
+%d minutes has left from %s time
+Are you sure you want to close shollu?
+Are you sure you want to hibernate this Computer ? Click OK to hibernate
+Your computer doesn't support hibernate
+Are you sure you want to Shutdown this Computer ? Click OK to shutdown
+Help File not found
+
+;; ----- PopUp Menu ------;;
+
+Open Shollu
+Hide Shollu
+Program setting
+Prayer times setting
+Main message setting
+Schedule maker
+Task scheduler
+Masehi(Gregorian) – Hijriyah Converter
+Open help
+Shutdown PC
+Hibernate PC
+Close Shollu
+Adzan
+Stop Adzan
+Pause Adzan
+Play Adzan
+About Shollu
+
+;; ----- MessageBox ------- ;;
+
+Invalid value for Latitude or Longitude
+Invalid value for TimeZone or Altitude
+Invalid Added value for Dhuhur or Maghrib
+Invalid Added value for Gd or Gn
+
+; Select cities
+Total Place names
+Open Shollu place name
+
+; Dialog
+Information
+Warning
+Question
+Error
+
+; Prayer times table , result HTML, tsv, csv format
+
+Prayer times table for
+Dawn Angle (Gd)
+Night Angle (Gn)
+Time Zone
+Asr Calculation Based on
+Conventions for calculation Fajr and Ishaa Based on
+
+; Task scheduler
+
+Cannot Save to task.dat. Make sure file task.dat is not currently in use
+Invalid value for message
+Invalid value for Name
+Message Cannot contain simbol "|" or ";"
+File Not Found. Make sure you type correct file for message when you select "Command" type
+Are you sure you want to delete the selected message ?
+
+; Setting program
+Open Sound file for adzan
+Adzan File not found. Make sure you select correct location of the file.
+
+; Others
+Date
+Masehi
+Hijri
+Month
+
+; Task Type
+[None]
+Information
+Error
+Warning
+Question
+Command
+Shutdown PC
+Hibernate
+Moving Text
+
+; Task Frequently
+[None]
+Daily
+Weekly
+Monthly
+OnlyOnce
+OnStartProgram
+
+; New
+Conventions for Fajr and Ishaa
+
+; Begin From  v3.02
+Color
+Time to pray %s still %s (hours:minutes:second)
+Remaining
+Qibla Direction
+
+; From v3.05
+Dialog Message
+Effect
+Top
+Center
+Bottom
+Very Fast
+Fast
+Normal
+Slow
+Very Slow
+Multimedia
+
+; From v3.06
+Add Fajr
+Add Asr
+Add Isha
+Round off downwards
+Round off upwards
+Round off normal
+Window Always on Top
+Hijriyah Correction
+Remaining Time

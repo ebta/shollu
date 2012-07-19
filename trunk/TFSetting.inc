@@ -1,0 +1,1 @@
+TFSetting = class(TObj)

@@ -1,0 +1,309 @@
+;; ===================================== ;;
+;; Shollu Language Pack for Shollu v3.06 ;;
+;; LangName      : Indonesia             ;;
+;; Created by    : Ebta Setiawan         ;;
+;; Last Modified : 8:40 09/12/2006     ;;  
+;; ===================================== ;;
+
+;; Do not directly edit this file, but always save as or created backup copy
+Shollu3
+;; ========== General ========== ;;
+
+; Prayer tims names
+Shubuh
+Terbit
+Dhuhur
+Asar
+Maghrib
+Isya'
+
+; DayOf Week
+Ahad
+Senin
+Selasa
+Rabu
+Kamis
+Jum'at
+Sabtu
+
+; Month Name
+Januari
+Februari
+Maret
+April
+Mei
+Juni
+Juli
+Agustus
+September
+Oktober
+November
+Desember
+
+; Month Name in Hijriyah
+Muharram
+Safar
+Rabiul Awal
+Rabiul Akhir
+Jumadil Awal
+Jumadil Akhir
+Rajab
+Syaban
+Ramadhan
+Syawal
+Dzulqaidah
+Dzulhijjah
+
+; Prayer times parameter
+Grs Lintang
+Grs Bujur
+Ketinggian
+Zona Waktu
+Organisasi
+Fiqih
+
+;; ----- Button ------ ;;
+
+OK
+Simpan
+Batal
+
+;; ========== Main Page Window ========== ;;
+
+;; ----- Main Page ( Caption / Title )----- ;
+
+Pengingat waktu sholat
+Tampilan halaman utama
+Halaman utama
+Pengaturan program
+Waktu sholat
+Pesan utama
+Buat jadwal
+Pesan tambahan
+Tentang program
+Kemarin
+Hari ini
+Besok
+Lokasi : 
+
+;; ----- Program Pengaturan Window ------ ;;
+
+Tampilan Pengaturan program
+Pilih skin / warna
+Pilih bahasa
+Suara adzan
+Mainkan
+Jeda
+Berhenti
+Format waktu
+Otomatis jalan ketika windows mulai
+Simpan
+
+;; ----- Prayer Times Pengaturan ----- ;;
+
+Pengaturan waktu sholat
+Lokasi
+Pilih area
+Waktu Asar
+Tambah Dhuhur
+Tambah Maghrib
+Universitas Ilmu Keislaman Karachi
+Federasi Islam Amerika Utara
+Rabitah Alam Islami
+Universitas Ummul Qura
+Dinas Geologi Mesir
+Tentukan sendiri derajat-nya 
+Buka data
+Gunakan data
+Tutup
+Lokasi
+Grs Lintang
+Grs Bujur
+Simpan
+
+;; ----- Message Info ----- ;;
+
+Pengaturan Pesan utama
+Sebelum waktu sholat tiba
+Tampilkan pesan sebelumnya
+Ketika tiba waktu sholat
+Tampilkan pesan
+Minimize semua windows
+Jalankan suara adzan atau media lainnya
+Langsung Shutdown Komputer
+Hibernate Komputer
+Setelah waktu sholat
+Tampilkan pesan sesudahnya
+Shutdown Komputer setelah
+Hibernate setelah
+Pesan untuk hari jum'at
+Tampilkan pesan informasi waktu sholat setiap
+Menit
+Simpan
+
+
+;; ----- Creating Prayer times schedule ----- ;;
+
+Pembuatan Jadwal Sholat
+Membuat jadwal sholat
+Pilih tanggal mulai
+Sampai tanggal
+Format waktu
+Simpan dalam format
+HTML
+Tab Separated value (tsv)
+Comma Separated Value (csv)
+Pilih warna utama
+Simpan file
+
+;; ----- Task Scheduler ------ ;;
+
+Nama
+Tipe
+Frekuensi
+jam
+Hari
+Tanggal
+Bulan
+Pesan
+Buka File
+Tambah
+Hapus
+Batal
+Simpan
+Tutup
+
+;; ----- About Window ----- ;;
+Tentang Program
+
+;; ================ Others Message ============== ;;
+
+;; ----- Main info ------- ;;
+
+Program shollu sudah berjalan
+Waktu sholat %s sudah tiba
+%d menit lagi waktu sholat %s
+Siapkan diri untuk sholat jum'at
+%d menit telah lewat dari sholat %s
+Apakah anda yakin akan menutup program shollu?
+Apakah anda yakin akan meng-Hibernate Komputer ini ? Klik OK untuk hibernate
+Komputer anda tidak mendukung fungsi hibernate
+Apakah anda yakin akan mematikan ( Shutdown ) komputer ? Klik OK untuk Shutdown
+Help File tidak ditemukan
+
+;; ----- PopUp Menu ------;;
+
+Buka Program Shollu
+Sembunyikan Shollu
+Pengaturan Program
+Pengaturan waktu sholat
+Pengaturan pesan utama
+Pembuatan jadwal sholat
+Pesan tambahan
+Konversi Masehi – Hijriyah
+Buka bantuan
+Shutdown PC
+Hibernate PC
+Tutup Shollu
+Adzan
+Matikan Adzan
+Hentikan Adzan
+Jalankan Adzan
+Tentang Shollu
+
+;; ----- MessageBox ------- ;;
+
+Nilai yang tidak valid untuk garis Lintang / garis Bujur
+Nilai yang tidak valid untuk Zona waktu / ketinggian
+Nilai yang tidak valid untuk tambahan waktu Dhuhur / Maghrib
+Nilai yang tidak valid untuk Gd / Gn
+
+; Select cities
+Jumlah data lokasi
+Buka file shollu place name
+
+; Dialog
+Informasi
+Peringatan
+Pertanyaan
+Error
+
+; Prayer times table , result HTML, tsv, csv format
+
+Jadwal waktu sholat untuk wilayah
+Dawn Angle (Gd)
+Night Angle (Gn)
+Zona waktu
+Perhitungan waktu asar berdasarkan
+Konvensi perhitungan sholat shubuh dan isya berdasarkan
+
+; Task scheduler
+
+Tidak dapat menyimpan file task.dat. Pastikan file task.dat tidak sedang digunakan
+Nilai tidak valid untuk pesan
+Nilai tidak valid untuk Nama
+Pesan tidak boleh mengandung simbol "|" atau ";"
+File tidak ditemukan. Pastikan file tersebut ada jika memilih tipe command
+Apakah anda yakin akan menghapus pesan yang dipilih ?
+
+; Pengaturan program
+Buka file suara untuk adzan
+File untuk adzan tidak ditemukan. Pastikan file tersebut ada.
+
+; Others
+Tanggal
+Masehi
+Hijriyah
+Bulan
+
+; Task Type
+[None]
+Informasi
+Error
+Peringatan
+Pertanyaan
+Command
+Shutdown PC
+Hibernate
+Tulisan bergerak
+
+; Task Frequently
+[None]
+Harian
+Mingguan
+Bulanan
+Hanya Sekali
+Ketika Start Program
+
+; New
+Konvensi untuk Sholat Shubuh dan Isya
+
+; Add From v3.02
+Warna
+Waktu Sholat %s masih %s (jam:menit:detik)
+Masih
+Arah Kiblat
+
+; From v3.05
+Pesan Dialog
+Efek
+Atas
+Tengah
+Bawah 
+Sangat Cepat
+Cepat
+Normal
+Lambat
+Sangat Lambat
+Multimedia
+
+; From v3.06
+Tambah Shubuh
+Tambah Asar
+Tambah Isya'
+Pembulatan Kebawah
+Pembulatan Keatas
+Pembulatan Normal
+Tampilan (window) selalu paling atas
+Penyesuaian Hijriyah
+Waktu Tersisa

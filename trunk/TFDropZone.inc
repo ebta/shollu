@@ -1,0 +1,1 @@
+TFDropZone = class(TObj)
