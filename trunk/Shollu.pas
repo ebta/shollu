@@ -8,7 +8,7 @@ unit Shollu;
 
 interface
 
-uses Windows,KOL,Messages { proc makerounded };
+uses Windows,KOL,Messages,ShellAPI,ShFolder { proc makerounded };
 type
   tIconType = (itNone,itError,itWarn,itInfo,itQuestion);
   tTaskType = (ttNone,ttinfo,ttError,ttWarn,ttQuestion,ttCommand,ttShutdown,
@@ -66,7 +66,7 @@ var
   TIMEFORMAT : string = 'HH:mm:ss';
   TaskToday : array of TTask;
   TaskTodayCount : Integer = -1;
-  SholluDir : String;
+  SholluDir,AppDataDir : String;
   Lang : PStrList;
   NmBulanM : array[0..12] of string;
   NmBulanH : array[0..12] of string;
@@ -75,7 +75,7 @@ var
   Add_Dhuhur,Add_Maghrib,Add_Shubuh,Add_Asar,Add_Isya : Integer;
   HijriyahDiff : ShortInt =0;
 const
-  Versi = 'v3.09b';
+  Versi = 'v3.09';
   SATU_MENIT  = 1.0/1440;
   TIME_FMT_2 = 'HH:mm';
   TIME_FMT_3 = 'HH:mm:ss';
@@ -100,7 +100,12 @@ procedure MakeRounded(Control: PControl);
 Function IsSuspendMode(): Boolean;
 Function SetSuspendMode(): Boolean;
 function Tan(X: Extended): Extended;
-function TSholat2Str(waktu: TSholat) : TSholatString;
+function TSholat2Str(waktu: TSholat; Fmt : string = TIME_FMT_3 ) : TSholatString;
+function GetSpecialFolderPath(folder : integer) : string;
+function GetTaskDirectory : string;
+function DecimalToDMS(coord : Double) : string;
+function Lat2DMS(lat : Double) : string;
+function Long2DMS(Lon : Double) : string;
 
 implementation
 
@@ -466,12 +471,150 @@ Begin
   Result.tIsya := To_HMS(Z+Vn)+ Add_Isya *SATU_MENIT;
 End;
 
-function TSholat2Str(waktu: TSholat) : TSholatString;
+function TSholat2Str(waktu: TSholat; Fmt : string = TIME_FMT_3) : TSholatString;
 begin
-	result.tShubuh 	:= Time2StrFmt(TIME_FMT_3,waktu.tShubuh);
-	result.tDhuhur 	:= Time2StrFmt(TIME_FMT_3,waktu.tDhuhur);
-	result.tAsar	  := Time2StrFmt(TIME_FMT_3,waktu.tAsar);
-	result.tMaghrib	:= Time2StrFmt(TIME_FMT_3,waktu.tMaghrib);
-	result.tIsya		:= Time2StrFmt(TIME_FMT_3,waktu.tIsya);
+	result.tShubuh 	:= Time2StrFmt(Fmt,waktu.tShubuh);
+	result.tDhuhur 	:= Time2StrFmt(Fmt,waktu.tDhuhur);
+   Result.tTerbit    := Time2StrFmt(Fmt,waktu.tTerbit);
+	result.tAsar	   := Time2StrFmt(Fmt,waktu.tAsar);
+	result.tMaghrib	:= Time2StrFmt(Fmt,waktu.tMaghrib);
+	result.tIsya		:= Time2StrFmt(Fmt,waktu.tIsya);
 end;
+
+function DecimalToDMS(coord : Double) : string;
+var
+   xd : Double;
+   d,m,s : Integer;
+begin
+   xd := coord;
+   if xd < 0 then xd := -xd;
+
+   d := IntPart(xd);
+   m := IntPart(precPart(xd) * 60);
+   s := Round(precPart(precPart(xd) * 60) * 60);
+
+   Result := Int2Str(d) + '°' + Int2Str(m) + '''' + Int2Str(s) + '"';    
+end;
+
+function Lat2DMS(lat : Double) : string;
+begin
+   if lat > 0 then
+      Result := DecimalToDMS(lat) + 'N'
+   else
+      Result := DecimalToDMS(lat) + 'S'
+end;
+
+function Long2DMS(Lon : Double) : string;
+begin
+   if Lon > 0 then
+      Result := DecimalToDMS(Lon) + 'E'
+   else
+      Result := DecimalToDMS(Lon) + 'W'
+end;  
+
+function GetTaskDirectory: string;
+const
+   CSIDL_COMMON_APPDATA = $0023; { All Users\Application Data }
+var
+   tmp : string;
+begin
+   if isWinVer([wv31,wv95,wv98,wvME]) then // Windows95/98/Me
+      Result := SholluDir
+   else
+   begin
+      tmp := GetSpecialFolderPath(CSIDL_COMMON_APPDATA);
+      if DirectoryExists(tmp) then
+      begin
+         if not DirectoryExists(tmp + '\ebsoft') then
+            MkDir(tmp+'\ebsoft')
+         else
+         if not DirectoryExists(tmp+'\ebsoft\shollu3') then
+           MkDir(tmp+'\ebsoft\shollu3');
+
+         tmp := tmp + '\ebsoft\shollu3\';
+         if DirectoryExists(tmp) then
+            Result := tmp
+         else
+         begin
+            MsgOK('Gagal untuk mengakses directory'+#13#10+tmp);
+            Result := tmp ;
+            Exit;
+         end;  
+      end;
+   end;
+end;
+
+function GetSpecialFolderPath(folder : integer) : string;
+const
+   SHGFP_TYPE_CURRENT = 0;
+var
+   path: array [0..MAX_PATH] of char;
+begin
+   if SUCCEEDED(SHGetFolderPath(0,folder,0,SHGFP_TYPE_CURRENT,@path[0])) then
+     Result := path
+   else
+     Result := '';
+end;
+
+(*
+  CSIDL_DESKTOP                       = $0000; { <desktop> }
+  CSIDL_INTERNET                      = $0001; { Internet Explorer (icon on desktop) }
+  CSIDL_PROGRAMS                      = $0002; { Start Menu\Programs }
+  CSIDL_CONTROLS                      = $0003; { My Computer\Control Panel }
+  CSIDL_PRINTERS                      = $0004; { My Computer\Printers }
+  CSIDL_PERSONAL                      = $0005; { My Documents.  This is equivalent to CSIDL_MYDOCUMENTS in XP and above }
+  CSIDL_FAVORITES                     = $0006; { <user name>\Favorites }
+  CSIDL_STARTUP                       = $0007; { Start Menu\Programs\Startup }
+  CSIDL_RECENT                        = $0008; { <user name>\Recent }
+  CSIDL_SENDTO                        = $0009; { <user name>\SendTo }
+  CSIDL_BITBUCKET                     = $000a; { <desktop>\Recycle Bin }
+  CSIDL_STARTMENU                     = $000b; { <user name>\Start Menu }
+  CSIDL_MYDOCUMENTS                   = $000c; { logical "My Documents" desktop icon }
+  CSIDL_MYMUSIC                       = $000d; { "My Music" folder }
+  CSIDL_MYVIDEO                       = $000e; { "My Video" folder }
+  CSIDL_DESKTOPDIRECTORY              = $0010; { <user name>\Desktop }
+  CSIDL_DRIVES                        = $0011; { My Computer }
+  CSIDL_NETWORK                       = $0012; { Network Neighborhood (My Network Places) }
+  CSIDL_NETHOOD                       = $0013; { <user name>\nethood }
+  CSIDL_FONTS                         = $0014; { windows\fonts }
+  CSIDL_TEMPLATES                     = $0015;
+  CSIDL_COMMON_STARTMENU              = $0016; { All Users\Start Menu }
+  CSIDL_COMMON_PROGRAMS               = $0017; { All Users\Start Menu\Programs }
+  CSIDL_COMMON_STARTUP                = $0018; { All Users\Startup }
+  CSIDL_COMMON_DESKTOPDIRECTORY       = $0019; { All Users\Desktop }
+  CSIDL_APPDATA                       = $001a; { <user name>\Application Data }
+  CSIDL_PRINTHOOD                     = $001b; { <user name>\PrintHood }
+  CSIDL_LOCAL_APPDATA                 = $001c; { <user name>\Local Settings\Application Data (non roaming) }
+  CSIDL_ALTSTARTUP                    = $001d; { non localized startup }
+  CSIDL_COMMON_ALTSTARTUP             = $001e; { non localized common startup }
+  CSIDL_COMMON_FAVORITES              = $001f;
+  CSIDL_INTERNET_CACHE                = $0020;
+  CSIDL_COOKIES                       = $0021;
+  CSIDL_HISTORY                       = $0022;
+  CSIDL_COMMON_APPDATA                = $0023; { All Users\Application Data }
+  CSIDL_WINDOWS                       = $0024; { GetWindowsDirectory() }
+  CSIDL_SYSTEM                        = $0025; { GetSystemDirectory() }
+  CSIDL_PROGRAM_FILES                 = $0026; { C:\Program Files }
+  CSIDL_MYPICTURES                    = $0027; { C:\Program Files\My Pictures }
+  CSIDL_PROFILE                       = $0028; { USERPROFILE }
+  CSIDL_SYSTEMX86                     = $0029; { x86 system directory on RISC }
+  CSIDL_PROGRAM_FILESX86              = $002a; { x86 C:\Program Files on RISC }
+  CSIDL_PROGRAM_FILES_COMMON          = $002b; { C:\Program Files\Common }
+  CSIDL_PROGRAM_FILES_COMMONX86       = $002c; { x86 C:\Program Files\Common on RISC }
+  CSIDL_COMMON_TEMPLATES              = $002d; { All Users\Templates }
+  CSIDL_COMMON_DOCUMENTS              = $002e; { All Users\Documents }
+  CSIDL_COMMON_ADMINTOOLS             = $002f; { All Users\Start Menu\Programs\Administrative Tools }
+  CSIDL_ADMINTOOLS                    = $0030; { <user name>\Start Menu\Programs\Administrative Tools }
+  CSIDL_CONNECTIONS                   = $0031; { Network and Dial-up Connections }
+  CSIDL_COMMON_MUSIC                  = $0035; { All Users\My Music }
+  CSIDL_COMMON_PICTURES               = $0036; { All Users\My Pictures }
+  CSIDL_COMMON_VIDEO                  = $0037; { All Users\My Video }
+  CSIDL_RESOURCES                     = $0038; { Resource Directory }
+  CSIDL_RESOURCES_LOCALIZED           = $0039; { Localized Resource Directory }
+  CSIDL_COMMON_OEM_LINKS              = $003a; { Links to All Users OEM specific apps }
+  CSIDL_CDBURN_AREA                   = $003b; { USERPROFILE\Local Settings\Application Data\Microsoft\CD Burning }
+  CSIDL_COMPUTERSNEARME               = $003d; { Computers Near Me (computered from Workgroup membership) }
+  CSIDL_PROFILES                      = $003e;
+*)
+
 end.
