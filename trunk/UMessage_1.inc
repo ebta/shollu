@@ -40,9 +40,7 @@ begin
       Result.Lbl4 := NewLabel( Result.GPmain, 'minutes' ).SetPosition( 234, 39 ).AutoSize( TRUE );
       Result.Lbl4.Transparent := True;
       Result.CB8 := NewCheckBox( Result.GPmain, '---' ).SetPosition( 10, 14 ).AutoSize( TRUE );
-      Result.CB8.Transparent := True;
       Result.CB9 := NewCheckBox( Result.GPmain, '--' ).SetPosition( 10, 38 ).AutoSize( TRUE );
-      Result.CB9.Transparent := True;
       Result.BtnSave := NewBitBtn( Result.GPmain, 'Save', [ bboImageList ], glyphLeft, Form1.ImageList16.Handle, 4 ).SetPosition( 307, 68 ).SetSize( 90, 29 ).LikeSpeedButton.LikeSpeedButton;
       Result.BtnSave.Transparent := True;
       Result.DateJumat := NewDateTimePicker( Result.GPmain, [dtpoTime,dtpoUpDown] ).SetPosition( 186, 13 ).SetSize( 97, 21 );

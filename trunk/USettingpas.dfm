@@ -1379,7 +1379,7 @@ object FSetting: TFSetting
     parentFont = True
     EraseBackground = False
     Localizy = loForm
-    Transparent = True
+    Transparent = False
     Checked = False
     TabStop = True
     autoSize = True
@@ -1599,7 +1599,7 @@ object FSetting: TFSetting
     parentFont = True
     EraseBackground = False
     Localizy = loForm
-    Transparent = True
+    Transparent = False
     Checked = False
     TabStop = True
     autoSize = True
@@ -1656,7 +1656,7 @@ object FSetting: TFSetting
     parentFont = True
     EraseBackground = False
     Localizy = loForm
-    Transparent = True
+    Transparent = False
     Checked = False
     TabStop = True
     autoSize = False
@@ -1714,7 +1714,7 @@ object FSetting: TFSetting
     OnClick = cbDropZoneClick
     EraseBackground = False
     Localizy = loForm
-    Transparent = True
+    Transparent = False
     Checked = False
     TabStop = True
     autoSize = True
@@ -1997,7 +1997,7 @@ object FSetting: TFSetting
     Visible = True
     OnDestroy = KOLFrame1Destroy
     AllBtnReturnClick = False
-    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\src\'
+    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\shollu svn\'
     Locked = False
     formUnit = 'USettingpas'
     Enabled = True

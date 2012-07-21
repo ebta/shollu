@@ -33,11 +33,8 @@ begin
     Result.LFormatJam := NewLabel( Result.Form, 'Label1' ).SetPosition( 12, 237 ).AutoSize( TRUE );
     Result.LFormatJam.Transparent := True;
     Result.CBAlpha := NewCheckBox( Result.Form, 'Alpha Blend' ).SetPosition( 188, 170 ).AutoSize( TRUE );
-    Result.CBAlpha.Transparent := True;
     Result.cbDropZone := NewCheckBox( Result.Form, 'Drop Zone' ).SetPosition( 10, 313 ).AutoSize( TRUE );
-    Result.cbDropZone.Transparent := True;
     Result.CBOnTop := NewCheckBox( Result.Form, 'Always on Top' ).SetPosition( 10, 292 ).SetSize( 143, 18 );
-    Result.CBOnTop.Transparent := True;
     Result.CBSkin := NewComboBox( Result.Form, [ coReadOnly, coNoIntegralHeight ] ).SetPosition( 152, 14 ).SetSize( 174, 0 );
     Result.CBSkin.Color := TColor(clWindow);
     Result.CBSkin.Items[ 0 ] := 'Blue Aqua';
@@ -132,7 +129,6 @@ begin
     Result.BtnSaveSetting := NewBitBtn( Result.Form, 'Export', [ bboImageList ], glyphLeft, Form1.ImageList16.Handle, 9 ).SetPosition( 220, 297 ).SetSize( 89, 28 ).LikeSpeedButton.LikeSpeedButton;
     Result.BtnSaveSetting.Transparent := True;
     Result.CBAutoStart := NewCheckBox( Result.Form, 'Auto start with windows' ).SetPosition( 10, 271 ).AutoSize( TRUE );
-    Result.CBAutoStart.Transparent := True;
     Result.GB2 := NewGroupBox( Result.Form, ' Time Format ' ).SetPosition( 112, 219 ).SetSize( 297, 36 );
     Result.GB2.TabStop := FALSE;
       Result.RB_hm := NewRadioBox( Result.GB2, 'HH:mm' ).SetPosition( 80, 12 ).SetSize( 57, 0 );

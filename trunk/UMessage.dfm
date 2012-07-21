@@ -184,7 +184,7 @@ object FMessage: TFMessage
       OnClick = CB8Click
       EraseBackground = False
       Localizy = loForm
-      Transparent = True
+      Transparent = False
       Checked = False
       TabStop = True
       autoSize = True
@@ -291,7 +291,7 @@ object FMessage: TFMessage
       OnClick = CB9Click
       EraseBackground = False
       Localizy = loForm
-      Transparent = True
+      Transparent = False
       Checked = False
       TabStop = True
       autoSize = True
@@ -1329,7 +1329,7 @@ object FMessage: TFMessage
     Visible = True
     OnDestroy = KOLFrame1Destroy
     AllBtnReturnClick = False
-    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\src\'
+    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\shollu svn\'
     Locked = False
     formUnit = 'UMessage'
     Enabled = True
