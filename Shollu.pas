@@ -75,7 +75,7 @@ var
   Add_Dhuhur,Add_Maghrib,Add_Shubuh,Add_Asar,Add_Isya : Integer;
   HijriyahDiff : ShortInt =0;
 const
-  Versi = 'v3.09';
+  Versi = 'v3.09.1';
   SATU_MENIT  = 1.0/1440;
   TIME_FMT_2 = 'HH:mm';
   TIME_FMT_3 = 'HH:mm:ss';
