@@ -1448,8 +1448,8 @@ object Form1: TForm1
     Localizy = False
     projectName = 'Shollu3'
     projectDest = 'Shollu3'
-    sourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\src\'
-    outdcuPath = 'D:\Documents\Ebta\Project\Software\Shollu3\src\'
+    sourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\shollu svn\'
+    outdcuPath = 'D:\Documents\Ebta\Project\Software\Shollu3\shollu svn\'
     dprResource = True
     protectFiles = True
     showReport = False
@@ -1488,7 +1488,7 @@ object Form1: TForm1
     AllBtnReturnClick = False
     Tabulate = False
     TabulateEx = False
-    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\src\'
+    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\shollu svn\'
     Locked = False
     formUnit = 'Unit1'
     formMain = True
