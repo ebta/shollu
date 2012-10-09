@@ -28,7 +28,7 @@ begin
     Result.LTitleSchedule.Transparent := True;
     Result.BtnColor := NewBitBtn( Result.Form, 'Color', [  ], glyphLeft, 0, 0 ).SetPosition( 144, 99 ).SetSize( 0, 20 ).LikeSpeedButton.LikeSpeedButton;
     Result.BtnColor.Font.Color := TColor(clWhite);
-    Result.BtnColor.Color := TColor(clBlack);
+    Result.BtnColor.Color := TColor(clGray);
     Result.BtnColor.Flat := TRUE;
     Result.BtnColor.TextShiftX := 1;
     Result.BtnColor.TextShiftY := 1;

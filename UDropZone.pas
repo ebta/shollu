@@ -47,6 +47,11 @@ type
     procedure Popup1N13Menu(Sender: PMenu; Item: Integer);
     procedure DoFlashWindow;
     procedure Timer1Timer(Sender: PObj);
+    procedure Popup1N17Menu(Sender: PMenu; Item: Integer);
+    procedure Popup1N18Menu(Sender: PMenu; Item: Integer);
+    procedure Popup1N16Menu(Sender: PMenu; Item: Integer);
+    procedure Popup1N19Menu(Sender: PMenu; Item: Integer);
+    procedure Popup1N20Menu(Sender: PMenu; Item: Integer);
   private
     { Private declarations }
     Bmp : PBitmap;
@@ -57,6 +62,7 @@ type
     //procedure SetRegion;
 //    procedure PaintWithBackground;
     procedure UpdateState;
+    procedure SetFontSize(sz: DWORD; saveToRegistry : Boolean);
   public
     { Public declarations }
     WindowFlashing : Boolean;
@@ -92,7 +98,7 @@ end;
 
 procedure TFDropZone.KOLForm1Show(Sender: PObj);
 var
-  x,y : Integer;
+  x,y,sz : Integer;
 begin
   if FSetting <> nil then
      FSetting.cbDropZone.Checked := True;
@@ -110,6 +116,13 @@ begin
     end;
 
   x := RegKeyGetDw(PReg,'dzAlpha');
+
+  sz := RegKeyGetDw(PReg,'dzSize');
+  if (sz>0) and (sz<72) then
+  begin
+    SetFontSize(sz,False);
+  end;
+
 
   if x > 253 then
     Popup1.Items[9].Checked := true
@@ -199,7 +212,7 @@ end;
 procedure TFDropZone.Updatelanguage;
 begin
   Popup1.Items[2].Caption := Lang.Items[226];
-  Popup1.Items[11].Caption := Lang.Items[84];
+  Popup1.Items[17].Caption := Lang.Items[84];
 end;
 
 procedure TFDropZone.Popup1N1Menu(Sender: PMenu; Item: Integer);
@@ -251,7 +264,8 @@ begin
       Linfo2.Parent := GPMain;
       Linfo.Transparent := True;
       Linfo2.Transparent := True;
-      Form.Height :=  form.canvas.TextHeight(Linfo.Caption) + 4;
+      //Form.Height :=  form.canvas.TextHeight(Linfo.Caption) + 4;
+      Form.Height := Linfo.font.FontHeight + 4;
       Linfo.Top  := 2;
       Linfo2.Top := 2;
     end
@@ -260,7 +274,8 @@ begin
       GPMain.Visible := False;
       Linfo.Parent := Form;
       Linfo2.Parent := Form;
-      Form.Height :=  form.canvas.TextHeight(Linfo.Caption);
+      //Form.Height :=  form.canvas.TextHeight(Linfo.Caption);
+      Form.Height := Linfo.font.FontHeight;
       Linfo.Top  := 0;
       Linfo2.Top := 0;
       Form.AlphaBlend := RegKeyGetDw(PReg,'dzAlpha');
@@ -356,9 +371,9 @@ end;
 procedure TFDropZone.Popup1Popup(Sender: PObj);
 begin
   if Form1.Form.Visible then
-    PopUp1.Items[13].Caption := Lang.Items[143]
+    PopUp1.Items[19].Caption := Lang.Items[143]
   else
-    PopUp1.Items[13].Caption := Lang.Items[142];
+    PopUp1.Items[19].Caption := Lang.Items[142];
 end;
 
 procedure TFDropZone.Popup1N13Menu(Sender: PMenu; Item: Integer);
@@ -415,6 +430,39 @@ begin
    Timer1.Enabled := True;
    flashCounter := 0;
    DoFlashWindow;
+end;
+
+procedure TFDropZone.Popup1N17Menu(Sender: PMenu; Item: Integer);
+begin
+  SetFontSize(18,true);
+end;
+
+procedure TFDropZone.Popup1N18Menu(Sender: PMenu; Item: Integer);
+begin
+  SetFontSize(21,true);
+end;
+
+procedure TFDropZone.Popup1N16Menu(Sender: PMenu; Item: Integer);
+begin
+  SetFontSize(15,true);
+end;
+
+procedure TFDropZone.Popup1N19Menu(Sender: PMenu; Item: Integer);
+begin
+  SetFontSize(24,true);
+end;
+
+procedure TFDropZone.Popup1N20Menu(Sender: PMenu; Item: Integer);
+begin
+  SetFontSize(27,true);
+end;
+
+procedure TFDropZone.SetFontSize(sz: DWORD; saveToRegistry: Boolean);
+begin
+  Linfo.Font.FontHeight := sz;
+  LInfo2.Font.FontHeight := sz;
+  UpdateState;
+  if saveToRegistry then RegKeySetDw(PReg,'dzSize',sz);
 end;
 
 end.

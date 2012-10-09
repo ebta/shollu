@@ -226,7 +226,7 @@ const
    CR = #13#10;
 var
    header,tabel,tr,footer,hasil,tbltmp,trtmp,info,mahzab,title,Newln : KOLString;
-   Thn1,bln1,tgl1,Thn2,bln2,tgl2,blnNext,BlnH1,BlnH2 : Word;
+   Thn1,bln1,tgl1,Thn2,bln2,tgl2,blnNext,blnTmp,BlnH1,BlnH2 : Word;
    i,j,jmlHari : Integer;
    MDate : TDateTime;
    Hdate : TDate;
@@ -237,16 +237,21 @@ var
 
    procedure CreateHtmlTable();
    begin
-      StrReplace(tbltmp,'{BLN_M}',NmBulanM[blnNext-1]+' '+ Int2Str(Thn1));
+      tbltmp := tabel;
+      blnTmp := blnNext - 1;
+      if blnTmp = 0 then blnTmp := 12;
+      StrReplace(tbltmp,'{BLN_M}',NmBulanM[blnTmp]+' '+ Int2Str(Thn1));
       StrReplace(tbltmp,'{BLN_H}',sBlnH+' '+Int2Str(Thn2)+' H');
-      trtmp  := Format(TR_TEMPLATE,['Msh','Hjr',Lang.Items[1],Lang.Items[2],Lang.Items[3],Lang.Items[4],Lang.Items[5],Lang.Items[6]]);
-      StrReplace(tbltmp,'{TBL_HEAD}',trtmp);
+      StrReplace(tbltmp,'{TBL_HEAD}',Format(TR_TEMPLATE,['Msh','Hjr',Lang.Items[1],Lang.Items[2],Lang.Items[3],Lang.Items[4],Lang.Items[5],Lang.Items[6]]));
       StrReplace(tbltmp,'{TBL_ROWS}',tr);
+      hasil := hasil + tbltmp;
    end;
 
    procedure CreateTextTable();
    begin
-      hasil := hasil + CR + CR +NmBulanM[blnNext-1]+' '+ Int2Str(Thn1)+Sep+Sep+
+      blnTmp := blnNext - 1;
+      if blnTmp = 0 then blnTmp := 12;
+      hasil := hasil + CR + CR +NmBulanM[blnTmp]+' '+ Int2Str(Thn1)+Sep+Sep+
              sBlnH+' '+Int2Str(Thn2)+' H'+CR+
              Lang.Items[184]+Sep+Lang.Items[185]+Sep+Lang.Items[1]+Sep+Lang.Items[2]+
              Sep+Lang.Items[3]+Sep+Lang.Items[4]+Sep+Lang.Items[5]+Sep+Lang.Items[6]+
@@ -266,7 +271,7 @@ begin
    case Tipe of
    tHtml :
       begin
-         hasil := StrLoadFromFile( GetStartDir + 'jadwal.html');
+         hasil := StrLoadFromFile( GetStartDir + 'jadwal.tpl');
 
          i := Pos('<!--header-->',hasil);
          header := Copy(hasil,0,i-1);
@@ -295,7 +300,6 @@ begin
    BlnH1 := 0;
    blnNext := bln1+1;
    if blnNext > 12 then blnNext := 1;
-   tbltmp := '';
 
    jmlHari := Integer(Trunc((Date2.DateTime - Date1.DateTime)));
    tr  := '';
@@ -355,10 +359,7 @@ begin
             end;
 
             if Tipe = tHtml then
-               begin
-                  tbltmp := tabel;
-                  CreateHtmlTable;
-               end
+                CreateHtmlTable
             else
                CreateTextTable;
 
@@ -385,7 +386,6 @@ begin
 
    if Tipe = tHtml then
       begin
-         tbltmp := tbltmp + tabel;
          CreateHtmlTable;
          StrReplace(info,'Shollu','<a href="http://ebsoft.web.id/download/shollu/" target="_blank">Shollu</a>');
          StrReplace(footer,'{INFO}',info);
@@ -395,7 +395,7 @@ begin
            //
          end;
 
-         hasil := hasil + tbltmp + footer;
+         hasil := hasil + footer;
       end
    else
    begin
