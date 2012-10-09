@@ -982,7 +982,7 @@ object FSchedule: TFSchedule
     Visible = True
     OnDestroy = KOLFrame1Destroy
     AllBtnReturnClick = False
-    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\src\'
+    UnitSourcePath = 'D:\Documents\Ebta\Project\Software\Shollu3\shollu svn\'
     Locked = False
     formUnit = 'USchedule'
     Enabled = True

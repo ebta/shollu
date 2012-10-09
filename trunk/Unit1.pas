@@ -238,7 +238,7 @@ uses UColConv, UMainPage, UAbout, UArea, UMessage, USchedule,
 {$R Skin.RES}
 {$R icon32.RES}
 {$R Language.RES}
-{$R Win7UAC.RES} 
+{$R Win7asInvoker.RES} 
 
 procedure TForm1.TopPanelMouseDown(Sender: PControl;
   var Mouse: TMouseEventData);

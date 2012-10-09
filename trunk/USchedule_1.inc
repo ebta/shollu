@@ -58,15 +58,15 @@ begin
     Result.GPmain.TabStop := FALSE;
       Result.BtnSave := NewBitBtn( Result.GPmain, 'Save File', [ bboImageList ], glyphLeft, Form1.ImageList16.Handle, 4 ).SetPosition( 311, 58 ).SetSize( 90, 27 ).LikeSpeedButton.LikeSpeedButton;
       Result.BtnSave.Transparent := True;
-      Result.BtnColor.OnClick := Result.BtnColorClick;
-      Result.BtnTextColor.OnClick := Result.BtnColorClick;
-    Result.RBFmt2.CreateWindow;
-    Result.RBFmt2.SetRadioChecked;
-    Result.RBhtml.CreateWindow;
-    Result.RBhtml.SetRadioChecked;
       Result.BtnSave.OnClick := Result.BtnSaveClick;
       Result.BtnSave.OnMouseMove := Result.BtnSaveMouseMove;
       Result.BtnSave.OnMouseLeave := Result.BtnSaveMouseLeave;
+      Result.BtnColor.OnClick := Result.BtnColorClick;
+    Result.RBhtml.CreateWindow;
+    Result.RBhtml.SetRadioChecked;
+    Result.RBFmt2.CreateWindow;
+    Result.RBFmt2.SetRadioChecked;
+      Result.BtnTextColor.OnClick := Result.BtnColorClick;
     Result.Form.CreateWindow;
 
 end;
