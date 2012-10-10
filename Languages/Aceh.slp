@@ -1,0 +1,310 @@
+;; ===================================== ;;
+;; Shollu Language Pack for Shollu v3.06 ;;
+;; LangName      : Aceh             ;;
+;; Created by    : Musanna Aditya (Mustyana)         ;;
+;; Last Modified : 20:10 25/09/2012     ;;  
+;; ===================================== ;;
+
+;; Do not directly edit this file, but always save as or created backup copy
+Shollu3
+;; ========== General ========== ;;
+
+; Nan Watee shalat
+Suboh
+Teubit
+Luho
+Asha
+Mugreeb
+Isya'
+
+; Uroe lam Siminggu
+Aleuhat
+Seulanyan
+Seulasa
+Rebu
+Hameh
+Jum'at
+Sabtu
+
+; Nan Buleun
+Januari
+Februari
+Maret
+April
+Mei
+Juni
+Juli
+Agustus
+September
+Oktober
+November
+Desember
+
+; Nan Buleun lam Hijriyah
+San Husen
+Shafa
+Mulod Awai
+Mulod Akhee
+Musem Bungong Kayee
+Musem Boh Kayee
+Apam
+Meurapet
+Puasa
+Uroe Raya
+Khauri Bu
+Haji
+
+; Prayer times parameter
+Grs Linteung
+Grs Buju
+Lamboeng
+Zona watee
+Organisasi
+Fiqih
+
+;; ----- Button ------ ;;
+
+OK
+Keubah
+Hana Jadeh
+
+;; ========== Main Page Window ========== ;;
+
+;; ----- Main Page ( Caption / Title )----- ;
+
+Peuingat Watee shalat
+Tampilan ulee halaman
+Halaman phon
+Peu-atoe program
+Watee Shalat
+Peusan
+Peugot Jadwal
+Peusan keunambah
+
+Masalah program
+Baroe
+Uroenyo
+Singoh
+Lokasi : 
+
+;; ----- Program Pengaturan Window ------ ;;
+
+Tampilan peu-atoe program
+Pileh kulet ngen wareuna
+Pileh bahsa
+Sue azhan
+Peu-muen
+Piyoeh
+Doeng
+Format watee
+Peujak watee windows udeep
+Keubah
+
+;; ----- Prayer Times Pengaturan ----- ;;
+
+Peu-atoe watee shalat
+Lokasi
+Pileh area
+Watee Asa
+Tambah Luho
+Tambah Mugreeb
+Universitas Ilmu Keislaman Karachi
+Federasi Islam Amerika Utara
+Rabitah Alam Islami
+Universitas Ummul Qura
+Dinas Geologi Mesir
+Peuteuntee koordinat keudroe
+Peuhah Data
+Pakek data
+Tutop
+Pat
+Grs Linteung
+Grs Buju
+Keubah
+
+;; ----- Message Info ----- ;;
+
+Peu-atoe peusan
+Seugohlom Watee ditamong shlat
+Peuna keulayi peusan awai
+Watee ka ditamong shalat
+Peudeuh peusan
+Peu-ubit mandum windows
+Peusue azhan atawa media selaennyan
+Peumatee komputer
+Hibernate Komputer
+kalheuh watee shalat
+Peudeuh peusan lheuhnyan
+Peumatee komputer kalheuh...
+Hibernate Kalheuh...
+Pesan bak uroe jumat
+Peudeuh peusan watee shalat lam...
+Meunet
+Keubah
+
+
+;; ----- Creating Prayer times schedule ----- ;;
+
+Peugot Watee shalat
+Suson Watee Shalat
+Pileh tanggal peuphon
+Sampoe tanggal
+Format watee
+Simpan lam format
+HTML
+Tab Separated value (tsv)
+Comma Separated Value (csv)
+Pileh wareuna utama
+Keubah file
+
+;; ----- Task Scheduler ------ ;;
+
+Nan
+Tipe
+Frekuensi
+Jeum
+Uroe
+Tanggal
+Buleun
+Peusan
+Peuhah File
+Tambah
+Peugadoh
+Hana Jadeh
+Keubah
+Tutop
+
+;; ----- About Window ----- ;;
+Teuntang  Program
+
+;; ================ Others Message ============== ;;
+
+;; ----- Main info ------- ;;
+
+Program Shollu ka beurjalan
+Watee Shalat %s katroeh teuka
+%d meunet treuk watee shalat %s
+peusiap droe jak Shalat Jumat
+%d meunit nyang ka kalewat dari shalat %s
+Peu gata yakin keuneuk top program shollu?
+peukeuh gata yakin keuneuk-Hibernate Komputer nyoe? Klik OK keuneuk hibernate
+Komputer gata hana mendukung fungsi hibernate
+Peukeuh gata yakin keuneuk ( peumatee) komputer ? Klik OK untuk Shutdown
+Help File hana diteumeung
+
+;; ----- PopUp Menu ------;;
+
+Peuhah Program Shollu
+Peusom Shollu
+Peu-atoe Program
+Peu-atoe watee sholat
+Peu-atoe peusan utama
+Peugot watee sholat
+Peusan peunambah
+Konversi Masehi – Hijriyah
+Peuhah bantuan
+Peumatee Komputer
+Hibernate Komputer
+Tutop Shollu
+Adzan
+Peumatee Adzan
+Piyoh Adzan
+Peujak Adzan
+Ata Shollu
+
+;; ----- MessageBox ------- ;;
+
+Nilai nyang hana valid keu gareh Linteung / gareh Buju
+Nilai nyang hana valid keu Zona watee / lambong
+Nilai nyang hana valid keu tambahan watee Luho / Mugreb
+Nilai nyang hana valid keu Gd / Gn
+
+; Select cities
+Jumlah data Teumpat
+Peuhah file shollu place name
+
+; Dialog
+Informasi
+Peuringatan
+Teumanyong
+Salah that
+
+; Prayer times table , result HTML, tsv, csv format
+
+Jadeuwal watee shalat keu sagoe
+Dawn Angle (Gd)
+Night Angle (Gn)
+Zona watee
+watee asha dihitong meunurot 
+peurbandengan suboh isya meunurot
+
+; Task scheduler
+
+Hanjeut Keubah file task.dat. Peu-pasti file task.dat hana dipakek
+Nilai hana valid keu Peusan
+Nilai hana valid keu Nan
+Peusan hanjeut pakek simbol "|" atau ";"
+File hana diteumeung. peu pasti file nyan na meunyoe pileh tipe command
+Peu gata yakin keuneuk lie peusan yang ka neupileh ?
+
+; Pengaturan program
+Peuhah file su keu adzan
+File keu adzan hana diteumeung. peu pasti filenyan na
+
+; Others
+Tanggal
+Masehi
+Hijriyah
+Buleun
+
+; Task Type
+[None]
+Informasi
+Salah that
+Peuringatan
+Teumanyoeng
+Command
+Peumatee Komputer
+Hibernate
+Tuleesan meujak
+
+; Task Frequently
+[None]
+Lam Uroe
+Lam Minggu
+Lam Buleun
+Si uroe
+Watee Start Program
+
+; New
+Konvensi keu Shalat Suboh ngen Isya
+
+; Add From v3.02
+Wareuna
+Watee Shalat %s mantong %s (jam:menit:detik)
+Mantong
+Arah Keblat
+
+; From v3.05
+Peusan Dialog
+Efek
+Ateuh
+Tengoh
+Miyueb 
+Bagaih That
+Bagaih
+Normal
+Meulep
+Brat meulep
+Multimedia
+
+; From v3.06
+Tambah Suboh
+Tambah Ashar
+Tambah Isya'
+Peubulat u yub
+Peubulat u ateuh
+peubulat Normal
+Beu Sabee Wateuh
+Peu sesuai Hijriyah
+Watee Tinggai
